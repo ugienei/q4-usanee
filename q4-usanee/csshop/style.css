@@ -1,0 +1,309 @@
+html { 
+  overflow-y: auto; 
+  background: #408040; /* สีพื้นหลัง */
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* ฟอนต์ที่อ่านง่าย */
+  line-height: 1.6; /* เพิ่มการเว้นบรรทัด */
+  color: #333; /* สีข้อความหลัก */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* จัดกลางแนวตั้ง */
+  background: #efffef; /* สีหัวข้อ */
+  padding: 1em; /* เพิ่ม padding */
+}
+
+div.search { 
+  padding: 1em; /* ปรับ padding */
+  flex-basis: 40%; /* ขนาดของช่องค้นหา */
+}
+
+div.search form {
+  width: 100%;
+  display: flex;
+}
+
+div.search form input {
+  padding: 0.5em;
+  font-size: 1.1em; /* ขนาดฟอนต์ที่เหมาะสม */
+  flex-basis: 70%;
+  border-radius: 12px;
+  margin-right: 1%;
+  border: 1px solid #ccc; /* เปลี่ยนเป็นสีเทาอ่อน */
+}
+
+div.search form button {
+  padding: 0.5em;
+  font-size: 1em;
+  flex-basis: 30%;
+  border-radius: 12px;
+  background-color: #ffffff; /* สีพื้นหลังของปุ่ม */
+  border: 1px solid #ccc; /* สีขอบปุ่ม */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาปุ่ม */
+  transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสี */
+}
+
+div.search form button:hover {
+  background-color: #e2e2e2; /* สีพื้นหลังเมื่อเลื่อนเมาส์ */
+}
+
+div.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; /* ปรับ padding */
+}
+
+a.login-bt, a.logout-bt {
+  padding: 0.5em 1em;
+  border-radius: 12px; /* มุมโค้ง */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: #404040; /* สีข้อความ */
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงา */
+  font-size: 1em; /* ขนาดฟอนต์ */
+  transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีพื้นหลัง */
+}
+
+a.login-bt:hover {
+  background-color: #cbf7df; /* สีเมื่อเลื่อนเมาส์ */
+}
+
+a.logout-bt {
+  color: #000; /* สีข้อความปุ่มออก */
+}
+
+a.logout-bt:hover {
+  background-color: #f34545; /* สีพื้นหลังเมื่อเลื่อนเมาส์ */
+  color: #fff; /* เปลี่ยนสีข้อความเมื่อเลื่อนเมาส์ */
+}
+
+div.mobile_bar {
+  display: flex;
+  justify-content: space-between;
+  background: #80a080; /* สีหัวข้อ */
+  padding: 10px; /* ปรับ padding */
+}
+
+main { 
+  display: flex; 
+  padding: 1em; /* เพิ่ม padding รอบๆ main */
+}
+
+nav {
+  order: 1;
+  width: 200px; /* ขนาดของเมนู */
+  background: #efffef; /* สีพื้นหลัง */
+  padding: 1.5em; /* เพิ่ม padding */
+  border-radius: 10px; /* มุมโค้ง */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+article {
+  order: 2;
+  flex: 1;
+  overflow: auto;
+  min-height: 480px; /* ความสูงขั้นต่ำ */
+  background: #ffffff; /* สีพื้นหลัง */
+  padding: 1em; /* เพิ่ม padding */
+  border-radius: 10px; /* มุมโค้ง */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+aside {
+  order: 3;
+  width: 200px; /* ขนาดของด้านข้าง */
+  background: #efffef; /* สีพื้นหลัง */
+  padding: 1em; /* เพิ่ม padding */
+}
+
+aside p { 
+  font-size: 75%; /* ขนาดฟอนต์สำหรับพารากราฟ */
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #408040; /* สีพื้นหลัง */
+  color: #fff; /* สีข้อความ */
+}
+
+h1, h2 { 
+  color: #008000; /* สีหัวเรื่อง */
+  margin: 1em 0; /* ระยะห่างด้านบนและล่าง */
+  text-align: center; /* จัดกลาง */
+}
+
+p { 
+  margin: 2em 15%; /* ระยะห่างสำหรับพารากราฟ */
+}
+
+img { 
+  display: block; 
+  margin: 0 auto; /* จัดกลางภาพ */
+}
+
+ul.menu { 
+  padding: 0 1em; 
+  margin: 0; 
+  list-style-type: none; /* ลบจุดที่รายการ */
+}
+
+ul.menu li {
+  padding: 10px; /* เพิ่ม padding */
+  border-bottom: solid 1px #ccddcc; /* ขอบล่าง */
+  font-size: small; /* ขนาดฟอนต์ */
+}
+
+a { 
+  text-decoration: none; 
+  color: #404040; /* สีข้อความลิงก์ */
+  transition: color 0.3s; /* การเปลี่ยนสีเมื่อเลื่อนเมาส์ */
+}
+
+a:hover { 
+  text-decoration: underline; /* เส้นใต้เมื่อเลื่อนเมาส์ */
+}
+
+ul.menu li a { 
+  display: block; /* ทำให้ลิงก์เป็นบล็อก */
+  padding: 0.5em; /* เพิ่ม padding */
+}
+
+ul.menu li a:hover { 
+  background-color: #c2f0c2; /* สีพื้นหลังเมื่อเลื่อนเมาส์ */
+}
+
+ul.menu li.dead a { 
+  color: #808080; /* สีสำหรับลิงก์ที่ไม่สามารถเข้าถึงได้ */
+}
+
+ul.menu li.dead a:hover { 
+  text-decoration: none; /* ลบเส้นใต้สำหรับลิงก์ที่ไม่สามารถเข้าถึงได้ */
+}
+
+/* MOBILE DEVICE SPECIFIC */
+@media only screen and (max-width: 599px) {
+  header, main { 
+    flex-flow: column; 
+  }
+  article { 
+    min-height: initial; /* ปรับความสูงของ article */
+  }
+  aside { 
+    width: 100%; /* ขนาดของด้านข้างในมือถือ */
+  }
+  nav { 
+    display: none; 
+    visibility: hidden; /* ซ่อนเมนูในมือถือ */
+  }
+  div.logo, div.search { 
+    width: 100%; 
+    display: block; 
+    margin: 0 auto; /* จัดกลาง */
+  }
+  div.search { 
+    padding: 0.5em 0; 
+    text-align: center; 
+  }
+  p { 
+    text-align: left; 
+    margin: 1em 10%; 
+  }
+}
+
+/* SXGA/WXGA Screens and wider */
+@media only screen and (min-width: 600px) {
+  div.mobile_bar { 
+    display: none; /* ซ่อน mobile bar ในหน้าจอที่กว้างขึ้น */
+  }
+}
+
+/* Class for centering content */
+.setcenter {
+  display: flex;
+  flex-direction: column; /* ตั้งแนวตั้ง */
+  align-items: center; /* จัดกลาง */
+  text-align: center; /* จัดกลางข้อความ */
+}
+
+/* Form styles */
+.label-form {
+  font-size: 1.2em; /* ขนาดฟอนต์สำหรับป้าย */
+  margin-right: 1%; 
+  margin-bottom: 1%; 
+}
+
+.input-form {
+  padding: 0.5em; 
+  font-size: 1.2em; 
+  border-radius: 12px; 
+  border: 1px solid gray; 
+  margin-bottom: 1%; 
+}
+
+.bt, .cancel, .edit-bt, .delete-bt, a.edit-bt, a.delete-bt, a.cancel {
+  margin-top: 2em;
+  padding: 0.5em 1em; /* ขนาดปุ่ม */
+  font-size: 1em; 
+  border-radius: 12px; 
+  border: 1px solid gray; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงา */
+  text-decoration: none; 
+  transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสี */
+}
+
+/* ปรับสีปุ่มต่าง ๆ */
+.bt {
+  background-color: #008000; /* สีพื้นหลัง */
+  color: white; /* สีข้อความ */
+}
+
+.cancel {
+  background-color: #b5b5b5; /* สีพื้นหลัง */
+}
+
+.edit-bt {
+  background-color: #63a7e6; /* สีพื้นหลัง */
+}
+
+.delete-bt {
+  background-color: #f55; /* สีพื้นหลัง */
+}
+
+.bt:hover, .cancel:hover, .edit-bt:hover, .delete-bt:hover {
+  background-color: #c0c0c0; /* สีเมื่อเลื่อนเมาส์ */
+}
+
+//ตาราง
+
+table {
+  width: 100%; /* กำหนดความกว้างของตารางให้เต็มพื้นที่ */
+  border-collapse: collapse; /* รวมเส้นขอบของเซลล์ */
+  margin: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+}
+
+th, td {
+  padding: 12px; /* เพิ่มระยะห่างภายในเซลล์ */
+  text-align: left; /* จัดข้อความให้อยู่ด้านซ้าย */
+  border: 1px solid #ddd; /* กำหนดเส้นขอบให้กับเซลล์ */
+}
+
+th {
+  background-color: #f2f2f2; /* สีพื้นหลังของหัวตาราง */
+  font-weight: bold; /* ทำให้ข้อความในหัวตารางหนา */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* สีพื้นหลังสำหรับแถวคู่ */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* สีพื้นหลังเมื่อชี้ที่แถว */
+}
